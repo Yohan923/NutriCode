@@ -1,0 +1,7 @@
+<Page loaded="loaded">
+<!--entry field for barcode with button to submit-->
+    <FlexboxLayout class="flexbox">
+        <TextField id="barcode" text="{{ barcode }}" hint="InputBarcode" autocorrect="false" autocapitalizationType="none"></TextField>
+        <Button text="Submit" tap="addCode"/>
+    </FlexboxLayout>
+</Page>

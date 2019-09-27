@@ -1,0 +1,9 @@
+<Page loaded="loaded">
+    <!--page with 2 text boxes for username and password and a sign in button -->
+    <FlexboxLayout class="flexbox" tap="blurTextField">
+        <Image src="res://calculate_logo" class="logo"></Image>
+        <TextField id="username" text="{{ username }}" hint="Username" autocorrect="false" autocapitalizationType="none"/>
+        <TextField id="password" text="{{ password }}" hint="Password" secure="true" />
+        <Button id="but" class="btn btn-primary" text="Sign in" tap="signIn"/>
+    </FlexboxLayout>
+</Page>

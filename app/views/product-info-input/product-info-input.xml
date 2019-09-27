@@ -1,0 +1,38 @@
+<Page loaded="loaded" 
+    xmlns="http://schemas.nativescript.org/tns.xsd" 
+    xmlns:lv="nativescript-ui-listview" 
+    xmlns:CheckBox="nativescript-checkbox">
+    <ScrollView orientation="vertical" isEnabled="true">
+        <GridLayout columns="*" rows="auto,auto,auto,auto" height="auto">
+            <GridLayout columns="*" class="data" rows="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*" row="0" col="0" tap="blurTextView">
+                <Label class="lab" id="topmost" row="0" col="0" text="Product name:"/>
+                <TextView row="1" col="0" textWrap="true" focus="onFocus" blur="onBlur" text="{{ name }}" id="name" autocorrect="false" autocapitalizationType="none"/>
+                <Label class="lab" row="2" col="0" text="Manufacturer:"/>
+                <TextView row="3" col="0" textWrap="true" focus="onFocus" blur="onBlur" text="{{ manufacturer }}" id="manufacturer" autocorrect="false" autocapitalizationType="none"/>
+                <Label class="lab" row="4" col="0" text="Distributer:"/>
+                <TextView row="5" col="0" textWrap="true" focus="onFocus" blur="onBlur" text="{{ distributer }}" id="distributer" autocorrect="false" autocapitalizationType="none"/>
+                <Label class="lab" row="6" col="0" text="Barcode:"/>
+                <TextView row="7" col="0" textWrap="true" focus="onFocus" blur="onBlur" text="{{ barcode }}" id="barcode" autocorrect="false" autocapitalizationType="none"/>
+                <Label class="lab" row="8" col="0" text="Product code:"/>
+                <TextView row="9" col="0" textWrap="true" focus="onFocus" blur="onBlur" text="{{ productCode }}" id="productCode" autocorrect="false" autocapitalizationType="none"/>
+                <Label class="lab" row="10" col="0" text="kcal/100g/ml"/>
+                <TextView row="11" col="0" textWrap="true" focus="onFocus" blur="onBlur" text="{{ calories }}" id="calories" autocorrect="false" autocapitalizationType="none"/>
+                <Label class="lab" row="12" col="0" text="Description:"/>
+                <TextView row="13" col="0" textWrap="true" focus="onFocus" minHeight="100%" blur="onBlur" text="{{ description }}" id="description" autocorrect="false" autocapitalizationType="none"/>
+                <Label class="lab" row="14" col="0" text="Allergens:"/>
+                <Button class="btn btn-primary" row="15" col="0" text="Add or Remove Allergens" tap="modify" id="allergMod"/>
+            </GridLayout>
+            <lv:RadListView items="{{ allergens }}" col="0" row="1" id="listView">
+                <lv:RadListView.itemTemplate>
+                    <StackLayout orientation="vertical">
+                        <Label class="allergLabel" text="{{ name }}" textWrap="true"/>
+                    </StackLayout>
+                </lv:RadListView.itemTemplate>
+            </lv:RadListView>
+            <GridLayout columns="*" rows="*" row="2" col="0">
+                <CheckBox:CheckBox row="0" col="0" text="By ticking this box, you agree that you have confirmed all information, allergens and calories value above are the same as product lable" textWrap="true" id="checkBox"/>
+            </GridLayout>
+            <Button class="btn btn-primary" id="uploadBut" text="Upload" row="3" col="0" tap="upload"/>
+        </GridLayout>
+    </ScrollView>
+</Page>

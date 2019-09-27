@@ -1,0 +1,15 @@
+
+.page{
+	margin-top: 10%;
+}
+
+.label {
+	text-align: center;
+	font-size: 24;
+	font-family: sans-serif;
+	padding-bottom: 50;
+}
+
+.grey {
+	background: white;
+}

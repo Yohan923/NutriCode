@@ -1,0 +1,51 @@
+Button {
+    font-size: 40%;
+}
+
+TextView {
+    font-size: 20%;
+    background-color: #FAFAFA;
+    border-width: 1;
+    border-style: solid;
+    border-color: #C7C7CC;
+    border-radius: 2;
+}
+
+.allergLabel {
+    width: 80%;
+    text-align: center;
+    border-width: 1;
+    border-style: solid;
+    border-radius: 2;
+    border-color: #C7C7CC;
+}
+
+#listView {
+    background-color: white;
+    height: 350;
+    width: 85%;
+}
+
+.data {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.lab{
+    padding-top: 20%;
+}
+
+#topmost{
+    padding-top: 0%;
+}
+
+#uploadBut{
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+#checkBox{
+    margin-left: 8%;
+    margin-right: 8%;
+    color: black;
+}

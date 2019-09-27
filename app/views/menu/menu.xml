@@ -1,0 +1,9 @@
+<Page loaded="loaded" class="grey">
+<!--buttons to input or scan a barcode with pictures -->
+    <StackLayout orientation="vertical" class="page">
+    	<Image  height="35%" width="60%" src="~/images/BlueCameraButton.png" tap="scanBarcode"></Image>
+        <Label text="Scan Barcode" class="label"/>
+        <Image  height="35%" width="60%" src="~/images/BlueBarcodeButton.png" tap="inputBarcode"></Image>
+        <Label text="Input Barcode" class="label"/>
+    </StackLayout>
+</Page>
